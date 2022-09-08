@@ -1,4 +1,4 @@
-.job {
+.note {
     padding: 5px;
     margin: 5px;
     display: flex;
@@ -6,19 +6,15 @@
     justify-content: space-between;
 }
 
-.job:nth-child(odd) {
+.note:nth-child(odd) {
     background-color: rgba(128, 128, 128, 0.1);
 }
 
-.job:nth-child(even) {
+.note:nth-child(even) {
     background-color: rgba(128, 128, 128, 0.3);
 }
 
-.job:hover {
-    background-color: rgba(0, 0, 128, 0.3);
-}
-
-.done {
+.clicked {
     color: darkgray;
     text-decoration: line-through;
 }

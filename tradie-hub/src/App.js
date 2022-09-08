@@ -36,6 +36,10 @@ function App() {
     setJobs(newJobs);
   }
 
+  function sortJobs({ jobs, sortBy }) {
+    
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -46,8 +50,8 @@ function App() {
         
       </header>
       <div className="box">
-        <h1>My Jobs</h1>
-        <JobList items={jobs}
+        <h1>My Jobs <button className='sortButton'>Sort by: Alphabet</button></h1>
+        <JobList jobs={jobs}
         onJobStatusChanged={handleJobStatusChanged} 
         onRemove={handleRemoveJob} />
       </div>
